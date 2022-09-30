@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "fc3c05fd-7fcf-4c61-bef7-7dc8504adc0d",
+		"name": "testlogique",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4819681"
+	},
+	"item": [
+		{
+			"name": "getAllUsers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "key",
+						"value": "HiJhvL$T27@1u^%u86g",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "key",
+						"value": "HiJhvL$T27@1u^%u86g",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Raka Hikmah\",\r\n        \"address\": \"tangerang\",\r\n        \"email\" : \"email\",\r\n        \"password\" : \"password\",\r\n        \"photos\" : \"photos\",\r\n        \"creditcard_type\" : \"Debit\",\r\n        \"creditcard_number\" : \"123323321233231\",\r\n        \"creditcard_expired\" : \"2022/06/05\",\r\n        \"creditcard_cvv\" : \"223\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutUsers",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "key",
+						"value": "HiJhvL$T27@1u^%u86g",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Raka Hikmah\",\r\n        \"address\": \"tangerang\",\r\n        \"email\" : \"email\",\r\n        \"password\" : \"password\",\r\n        \"photos\" : \"photos\",\r\n        \"creditcard_type\" : \"Debit\",\r\n        \"creditcard_number\" : \"123323321233231\",\r\n        \"creditcard_expired\" : \"2022/06/05\",\r\n        \"creditcard_cvv\" : \"223\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UploadImage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Raka Hikmah R/Pictures/Wallpapers/1971414.jpg"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Raka Hikmah R/Pictures/Wallpapers/gajah1.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/image-upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"image-upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUserById",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "key",
+						"value": "HiJhvL$T27@1u^%u86g",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/user/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
